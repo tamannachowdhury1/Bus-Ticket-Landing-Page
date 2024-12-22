@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="hidden">
         <nav class="font-Raleway ">
             <div class="flex flex-row justify-evenly bg-base-100 pt-10 ">
                 <div class="">
@@ -51,8 +51,8 @@
             </div>
         </nav>
     </header>
-    <main class="font-Raleway ">
-        <section class="mt-5">
+    <main class="font-Raleway">
+        <section class="mt-5 hidden">
             <div class="">
                 <div class="hero lg:bg-auto  min-h-screen bg-[url(images/banner.png)] bg-no-repeat">
                     <div class="hero-content text-neutral-content text-center">
@@ -111,7 +111,7 @@
                 </div>
             </div>
         </section>
-        <section class="mt-24">
+        <section class="mt-24 hidden">
             <h1 class="font-Raleway font-bold text-[40px] text-center">Best offers for you</h1>
             <div class="lg:flex-row flex-col flex place-content-center gap-5 mt-8 mb-12">
                 <div class="stats  ">
@@ -178,7 +178,7 @@
 
         </section>
 
-        <section class="mt-12 p-3 border-t-2 border-b-none   border-t-[#1DD100] rounded-[70px] bg-[#F7F8F8]">
+        <section class="mt-12 p-3 border-t-2 border-b-none   border-t-[#1DD100] rounded-[70px] bg-[#F7F8F8] hidden">
             <div class="">
                 <div class="text-center mt-24">
                     <h1 class="font-Raleway font-bold text-[40px] text-black">P.H Paribahan</h1>
@@ -281,23 +281,23 @@
                                     <kbd
                                         class="kbd bg-white border-none w-[60px] lg:w-[80px] h-[56px] font-medium text-lg text-[#03071280]">A</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">B</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">B</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">C</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">C</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">D</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">D</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">E</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">E</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">F</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">F</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">G</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">G</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">H</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">H</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">I</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">I</kbd>
                                     <kbd
-                                        class="kbd bg-white border-none w-[60px] h-[56px] font-medium text-lg text-[#03071280]">J</kbd>
+                                        class="kbd bg-white border-none lg:w-[80px] w-[60px] h-[56px] font-medium text-lg text-[#03071280]">J</kbd>
 
                                 </div>
                                 <div class="grid grid-cols-2 gap-4 lg:gap-12 flex-1 lg:flex-0">
@@ -476,9 +476,30 @@
             </div>
         </section>
         <!-- Right Half Cut -->
-
+        <!-- another pages -->
+        <section class="bg-[#1E1E1E1A] py-36 flex flex-col justify-center items-center">
+            <div class="w-[718px] h-[481px] bg-white shadow flex flex-col justify-center items-center">
+                <div class=" flex flex-col justify-center items-center space-y-4">
+                    <img src="images/success.png" alt="">
+                    <h6 class="font bold text-[24px] font-inter text-[#27AE60]">success</h6>
+                    <div class="text-center">
+                        <p class="font-inter font-medium text-lg text-[#4A4A4A]">Thank you for
+                            Booking
+                            Our
+                            Bus
+                            Seats. <br> We are working hard to find the best service and deals for you. </p>
+                        <p class="font-inter font-normal text-lg text-[#4A4A4A] text-center">Shortly you will find a
+                            confirmation in
+                            your
+                            email.</p>
+                    </div>
+                    <button
+                        class="btn w-[300px] bg-[#27AE60] text-white rounded-3xl font-semibold text-lg font-inter">Continue</button>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class=" bg-[#030712] text-base-content lg:h-[400px] ">
+    <footer class=" bg-[#030712] text-base-content lg:h-[400px] hidden">
         <div class="space-y-4 p-12 lg:p-24">
             <div class="flex  justify-between font-Raleway ">
                 <h1 class=" text-white text-2xl lg:text-[36px] font-extrabold">P-Ticket</h1>
