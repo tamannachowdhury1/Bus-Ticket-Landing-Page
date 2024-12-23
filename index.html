@@ -11,6 +11,15 @@
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
     <!-- font  -->
+    <style>
+        .back {
+            background-position: 78% 0%;
+        }
+
+        .back2 {
+            background-position: 58% 0%;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,7 +61,7 @@
         </nav>
     </header>
     <main class="font-Raleway">
-        <section class="mt-5">
+        <section class="-mt-16">
             <div class="">
                 <div class="hero lg:bg-auto  min-h-screen bg-[url(images/banner.png)] bg-no-repeat">
                     <div class="hero-content text-neutral-content text-center">
@@ -65,7 +74,7 @@
                                 integrated
                                 testing features allow for a streamlined .
                             </p>
-                            <button
+                            <button onclick="gothePoribohon()"
                                 class="btn border-none  bg-[#1DD100] text-black text-xl font-bold w-[170px] h-16">Buy
                                 Tickets</button>
                         </div>
@@ -74,7 +83,7 @@
             </div>
             <div class="font-inter flex justify-center  lg:reative">
                 <div
-                    class="flex lg:flex-row flex-col justify-center lg:space-y-0 space-y-12 lg:mt-0 mt-10  lg:gap-5 lg:absolute lg:inset-y-[108%]">
+                    class="flex lg:flex-row flex-col justify-center lg:space-y-0 space-y-12 lg:mt-0 mt-10  lg:gap-5 lg:absolute lg:inset-y-[82%]">
                     <div class="stats shadow  border-b-4 border-b-[#1DD100] w-[308px]  h-[138px] ">
                         <div class="flex gap-5 justify-center items-center">
                             <div class="stat-figure text-secondary">
@@ -116,7 +125,7 @@
             <div class="lg:flex-row flex-col flex place-content-center gap-5 mt-8 mb-12">
                 <div class="stats  ">
                     <div
-                        class="stat flex flex-row justify-evenly place-items-center gap-12  bg-[#FFBF0F] p-8 lg:p-0 w-[400px] lg:w-[573px] h-[220px] reative rounded-2xl mx-auto lg:mx-0">
+                        class="stat flex flex-row justify-around place-items-center gap-12  bg-[#FFBF0F] p-4 lg:p-1 w-[400px] lg:w-[573px] h-[220px] rounded-2xl mx-auto lg:mx-0 bg-[url(images/cupon-devider.png)] bg-no-repeat  back2">
                         <div class="font-inter space-y-1">
                             <div class="stat-value font-black text-2xl lg:text-[40px]">15% OFF</div>
                             <div class="stat-title font-semibold text-base lg:text-xl text-[#030712cc]">on your next
@@ -126,18 +135,8 @@
                             </div>
 
                         </div>
-                        <div
-                            class="absolute left-[50%] lg:left-[32%] lg:-bottom-[95.42%] bg-[url(images/cupon-devider.png)]">
-                            <img src="images/cupon-devider.png" alt="" srcset="">
-                        </div>
-                        <!-- <div
-                            class="absolute left-[34%] -bottom-[94.50%] h-44  border-r-2 border-dashed border-white my-4 ">
-                        </div>
-                        <div class="absolute left-[33%] -bottom-[59%]   w-8 h-8 bg-gray-50 rounded-full ">
-                        </div>
 
-                        <div class="absolute left-[33%] -bottom-[98%]   w-8 h-8 bg-gray-50 rounded-full ">
-                        </div> -->
+
                         <div class="font-Raleway space-y-1">
                             <div class="stat-value font-bold text-2xl lg:text[32px]">NEW15</div>
                             <div class="stat-title font-medium text-base lg:text-xl text-[#03071280]">Coupon Code</div>
@@ -146,7 +145,7 @@
                 </div>
                 <div class="stats ">
                     <div
-                        class="stat flex flex-row justify-evenly place-items-center gap-12 bg-[#F78C9C] p-8 lg:p-0 w-[400px] lg:w-[573px] h-[220px] reative rounded-2xl mx-auto lg:mx-0">
+                        class="stat flex flex-row justify-around place-items-center gap-12 bg-[#F78C9C] p-4 lg:p-0 w-[400px] lg:w-[573px] h-[220px] reative rounded-2xl mx-auto lg:mx-0 bg-[url(images/cupon-devider.png)] bg-no-repeat  back2">
                         <div class="font-inter space-y-1">
                             <div class="stat-value font-black text-2xl lg:text-[40px]">20% OFF</div>
                             <div class="stat-title font-semibold text-base lg:text-xl text-[#030712cc]">on your next
@@ -155,16 +154,8 @@
                             <div class="stat-desc font-medium text-sm lg:text-lg text-[#03071280]">use by January 2024
                             </div>
                         </div>
-                        <div class="absolute left-[50%] lg:left-[68%] lg:-bottom-[95.42%]"><img
-                                src="images/cupon-devider.png" alt="" srcset=""></div>
-                        <!-- <div
-                            class="absolute left-[70%] -bottom-[94.50%] h-44  border-r-2 border-dashed border-white my-4 ">
-                        </div>
-                        <div class="absolute left-[69%] -bottom-[59%]   w-8 h-8 bg-gray-50 rounded-full ">
-                        </div>
 
-                        <div class="absolute left-[69%] -bottom-[98%]  w-8 h-8 bg-gray-50 rounded-full ">
-                        </div> -->
+
                         <div class="font-Raleway space-y-1">
                             <div class="stat-value font-bold text-2xl lg:text[32px]">Couple 20</div>
                             <div class="stat-title font-medium text-base lg:text-xl text-[#03071280] text-center">Coupon
@@ -180,7 +171,8 @@
 
         </section>
 
-        <section class="mt-12 p-3 border-t-2 border-b-none   border-t-[#1DD100] rounded-[70px] bg-[#F7F8F8]">
+        <section id="poribohonSection"
+            class="mt-12 p-3 border-t-2 border-b-none   border-t-[#1DD100] rounded-[70px] bg-[#F7F8F8]">
             <div class="">
                 <div class="text-center mt-24">
                     <h1 class="font-Raleway font-bold text-[40px] text-black">P.H Paribahan</h1>
@@ -191,10 +183,11 @@
                         features allow for a streamlined .</p>
                 </div>
 
-                <div class="stats w-[380px] lg:w-[1170px] h-[418px]  mx-auto flex justify-center mt-10">
-                    <div class="stat flex flex-col lg:flex-row gap-16 lg:gap-32 items-center reative">
+                <div class="stats w-[380px] lg:w-[1170px] h-[418px]  mx-auto flex justify-center mt-10 ">
+                    <div
+                        class="stat flex flex-col lg:flex-row gap-16 lg:gap-32 items-center reative bg-[url(images/info-devider.png)] bg-no-repeat  back ">
                         <div>
-                            <div class="flex flex-col lg:flex-row space-y-4     lg:space-y-0 p-5 justify-between">
+                            <div class="flex flex-col lg:flex-row space-y-4     lg:space-y-0 p-5 justify-between ">
                                 <div class="font-inter space-y-1 flex items-center gap-3">
                                     <img class="w-16 h-12" src="images/bus-logo.png" alt="">
                                     <div class="stat-value font-black text-[40px]">
@@ -207,7 +200,8 @@
                                 <div>
                                     <button
                                         class="btn font-medium font-inter text-lg text-[#1DD100] bg-[#1DD1001A]  text-[#1DD10066] px-5"><span><img
-                                                src="images/seat-green.png" alt="" srcset=""></span>40
+                                                src="images/seat-green.png" alt="" srcset=""></span><span
+                                            id="seatLeft">40</span>
                                         Seats left</button>
                                 </div>
                             </div>
@@ -234,18 +228,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute left-[67%]  -bottom-[244.82%] invisible lg:visible "><img
-                                src="images/info-devider.png" alt="" srcset=""></div>
-                        <!-- <div class="absolute left-[67%]  -bottom-[174%]     w-20 h-20 bg-[#F7F8F8] rounded-full ">
-                        </div>
-                        <div
-                            class="absolute left-[69.50%] -bottom-[233%] h-72  border-r-2 border-dashed border-[#1DD100] my-4 ">
-                        </div>
-                        <div class="absolute left-[67%] -bottom-[250%]   w-20 h-20 bg-[#F7F8F8] rounded-full ">
-                        </div> -->
 
-
-                        <div class="font-Raleway text-center space-y-5">
+                        <div class="font-Raleway text-center space-y-5 ">
                             <img class="mx-auto" src="images/fare.png" alt="">
                             <div>
                                 <h4 class="font-bold text-[32px]">550 Taka
@@ -303,89 +287,89 @@
 
                                 </div>
                                 <div class="grid grid-cols-2 gap-4 lg:gap-12 flex-1 lg:flex-0">
-                                    <div class="grid  grid-cols-2 gap-4 font-inter ">
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A2</kbd>
-                                        <kbd
+                                    <div id="allkbd" class="grid  grid-cols-2 gap-4 font-inter ">
+                                        <kbd id="A1"
+                                            class="kbd btn font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A1</kbd>
+                                        <kbd id="A2"
+                                            class="kbd btn font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A2</kbd>
+                                        <kbd id="B1"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">B1</kbd>
-                                        <kbd
+                                        <kbd id="B2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">B2</kbd>
-                                        <kbd
+                                        <kbd id="C1"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">C1</kbd>
-                                        <kbd
+                                        <kbd id="C2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">C2</kbd>
-                                        <kbd
+                                        <kbd id="D1"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">D1</kbd>
-                                        <kbd
+                                        <kbd id="D2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">D2</kbd>
-                                        <kbd
+                                        <kbd id="E1"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">E1</kbd>
-                                        <kbd
+                                        <kbd id="E2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">E2</kbd>
-                                        <kbd
+                                        <kbd id="F1"
                                             class="kbd font-medium border-none  text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">F1</kbd>
-                                        <kbd
+                                        <kbd id="F2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">F2</kbd>
-                                        <kbd
+                                        <kbd id="G1"
                                             class="kbd font-medium border-none  text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">G1</kbd>
-                                        <kbd
+                                        <kbd id="G2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">G2</kbd>
-                                        <kbd
+                                        <kbd id="H1"
                                             class="kbd font-medium  border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">H1</kbd>
-                                        <kbd
+                                        <kbd id="H2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">H2</kbd>
-                                        <kbd
+                                        <kbd id="I1"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">I1</kbd>
-                                        <kbd
+                                        <kbd id="I2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">I2</kbd>
-                                        <kbd
+                                        <kbd id="J1"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">J1</kbd>
-                                        <kbd
+                                        <kbd id="J2"
                                             class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">J2</kbd>
                                     </div>
                                     <div class="grid  grid-cols-2 gap-4 font-inter ">
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A2</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">B1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">B2</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">C1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">C2</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">D1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">D2</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">E1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">E2</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none  text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">F1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">F2</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none  text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">G1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">G2</kbd>
-                                        <kbd
-                                            class="kbd font-medium  border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">H1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">H2</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">I1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">I2</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">J1</kbd>
-                                        <kbd
-                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">J2</kbd>
+                                        <kbd id="A3"
+                                            class="kbd btn font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A3</kbd>
+                                        <kbd id="A4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A4</kbd>
+                                        <kbd id="B3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">B3</kbd>
+                                        <kbd id="B4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">B4</kbd>
+                                        <kbd id="C3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">C3</kbd>
+                                        <kbd id="C4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">C4</kbd>
+                                        <kbd id="D3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">D3</kbd>
+                                        <kbd id="D4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">D4</kbd>
+                                        <kbd id="E3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">E3</kbd>
+                                        <kbd id="E4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">E4</kbd>
+                                        <kbd id="F3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">F3</kbd>
+                                        <kbd id="F4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">F4</kbd>
+                                        <kbd id="G3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">G3</kbd>
+                                        <kbd id="G4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">G4</kbd>
+                                        <kbd id="H3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">H3</kbd>
+                                        <kbd id="H4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">H4</kbd>
+                                        <kbd id="I3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">I3</kbd>
+                                        <kbd id="I4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">I4</kbd>
+                                        <kbd id="J3"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">J3</kbd>
+                                        <kbd id="J4"
+                                            class="kbd font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">J4</kbd>
                                     </div>
                                 </div>
                             </div>
@@ -398,43 +382,39 @@
                                 <div class="border-t-2 border-dashed border-[#03071233]"></div>
                             </div>
 
-                            <div
-                                class="lg:w-[443px] w-[390px] h-[335px] bg-[#F7F8F8] rounded-xl p-8 font-inter space-y-3">
+                            <div id="parentId"
+                                class="lg:w-[443px] w-[390px] h-[335px] bg-[#F7F8F8] rounded-xl p-8 font-inter space-y-3 overflow-y-scroll">
                                 <div class=" font-medium text-base flex justify-between  text-[#030712]">
-                                    <p>Seat <span
-                                            class="badge  font-bold text-white bg-[#1DD100] p-2 rounded-full">2</span>
+                                    <p>Seat <span id="seatsonkka"
+                                            class="badge  font-bold text-white bg-[#1DD100] p-2 rounded-full">0</span>
                                     </p>
                                     <p>Class</p>
                                     <p>Price</p>
                                 </div>
                                 <div class="border-t-2 border-dashed border-[#03071233]"></div>
-                                <div class="  font-normal text-base flex justify-between text-[#03071299]">
-                                    <p>C2</p>
-                                    <p>Economoy</p>
-                                    <p>550</p>
-                                </div>
 
-                                <div class=" font-medium text-base flex justify-between text-[#03071299]">
+
+                                <!--  <div class=" font-medium text-base flex justify-between text-[#03071299]">
                                     <p>C2</p>
                                     <p>Economoy</p>
                                     <p>550</p>
-                                </div>
+                                </div> -->
                                 <div class="border-t-2  border-[#03071233]"></div>
                                 <div class=" font-medium text-base flex justify-between  text-[#030712]">
                                     <p>Total Price</p>
-                                    <p>BDT 1100</p>
+                                    <p>BDT <span id="currentTotal">0</span></p>
 
                                 </div>
                                 <div class="flex justify-center reative">
                                     <input
-                                        class="font-normal text-[14px] text-[#03071266] w-[369px] h-[56px] p-5 rounded-xl"
+                                        class="font-normal text-[14px] text-[#03071266] w-[369px] h-[56px] p-5 rounded-xl rounded-r-none"
                                         type="text" placeholder="Have any copupon?">
-                                    <button
-                                        class="w-[80px] h-[40px] absolute right-[19%] mt-2 font-semibold text-base text-white bg-[#1DD100] rounded-lg">Apply</button>
+                                    <button disabled
+                                        class="btn w-[80px] h-[56px] right-[19%]  font-semibold text-base text-white bg-[#1DD100] rounded-lg rounded-l-none ">Apply</button>
                                 </div>
                                 <div class=" font-medium text-base flex justify-between  text-[#030712]">
                                     <p>Grand Total</p>
-                                    <p>BDT 1100</p>
+                                    <p>BDT <span>0</span></p>
                                 </div>
                             </div>
                             <div class="space-y-6">
@@ -449,7 +429,7 @@
                                 <div class="font-inter font-semibold text-base space-y-4   text-[#030712]">
                                     <p>Phone Number*</p>
                                     <div class="font-inter font-normal text-base flex  text-[#03071266]"><input
-                                            type="text"
+                                            type="number"
                                             class="lg:w-[433px] w-[390px] h-[64px] p-5 border-2 border-[#0307121A] rounded-xl"
                                             name="" id="" placeholder="Enter your phone number"></div>
                                 </div>
@@ -463,8 +443,8 @@
                                 </div>
 
                                 <div>
-                                    <button
-                                        class=" w-[390px] lg:w-[433px] h-[65px]  font-Raleway  font-semibold text-xl text-white bg-[#1DD100] rounded-2xl text-center">Next</button>
+                                    <button onclick="nextbtn()" disabled
+                                        class="btn w-[390px] lg:w-[433px] h-[65px]  font-Raleway  font-semibold text-xl text-white bg-[#1DD100] rounded-2xl text-center">Next</button>
                                 </div>
                             </div>
                             <div
@@ -531,6 +511,9 @@
             </div>
         </div>
     </footer>
+    <script src="same.js"></script>
+    <script src="p-tickets.js"></script>
+
 </body>
 
 </html>
