@@ -1,20 +1,28 @@
 function setbgcolor(eventName) {
+    removebgcolor('.kbdbtn', '');
     const btn = document.getElementById(eventName);
     btn.style.backgroundColor = '#1DD100';
-
+    disabled('.kbdbtn');
 }
 function removebgcolor(eventName) {
-    const bg = document.getElementById(eventName);
-    bg.style.backgroundColor = '';
+    const bg = document.querySelectorAll(eventName);
+    for (let i = 0; i < bg.length; i++) {
+        bg[i].style.backgroundColor = '';
+    }
 
 }
-
+function disabled(elementName) {
+    document.querySelectorAll(elementName).disabled = false;
+}
 
 function getElementBySeatsonkka(eventID) {
     const seat = document.getElementById(eventID);
     const seatText = seat.innerText;
-    const seatConvertNumber = parseInt(seatText);
-    const seatEnecreaseNUmber = seatConvertNumber + 1;
+    let i = parseInt(seatText);
+    const seatEnecreaseNUmber = i + 1;
+    if (seatEnecreaseNUmber > 40) {
+        return seatEnecreaseNUmber;
+    }
     seat.innerText = seatEnecreaseNUmber;
 
 }
@@ -23,6 +31,9 @@ function seatLeftElementBySeatsonkka(eventID) {
     const seatText = seat.innerText;
     const seatConvertNumber = parseInt(seatText);
     const seatEnecreaseNUmber = seatConvertNumber - 1;
+    if (seatEnecreaseNUmber < 0) {
+        return seatEnecreaseNUmber;
+    }
     seat.innerText = seatEnecreaseNUmber;
 
 }
@@ -66,10 +77,18 @@ function setPricecurrentvalue(eventID) {
     seatPrice.innerText = totalTicketPrice;
 }
 
-/* function price() {
 
-    console.log(crunntPrice);
-    const newTotalPrice = ticketprice + seatPriceNumber;
-    console.log(newTotalPrice);
-    crunntPrice.innerText = newTotalPrice;
-} */
+function setbgcolor(eventName) {
+    removebgcolor('.kbdbtn')
+    const btn = document.getElementById(eventName);
+    btn.style.backgroundColor = '#1DD100';
+
+
+}
+function removebgcolor(eventName) {
+    const bg = document.querySelectorAll(eventName);
+    for (let i = 0; i < bg.length; i++) {
+        bg[i].style.backgroundColor = '';
+
+    }
+}

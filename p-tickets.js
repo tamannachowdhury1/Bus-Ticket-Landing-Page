@@ -5,21 +5,16 @@ function gothePoribohon() {
 
 document.getElementById('A1').addEventListener('click', function () {
     setbgcolor('A1');
-    /*  const kbds = document.querySelectorAll('#allkbd');
-     const child = kbds.childNodes;
-     for (const kbd of child) {
-         console.log(kbd);
-     } */
     getElementBySeatsonkka('seatsonkka');
     seatLeftElementBySeatsonkka('seatLeft')
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'A1';
+    const btnInnerText = document.getElementById('A1');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
-
-
 
 });
 document.getElementById('A2').addEventListener('click', function () {
@@ -33,6 +28,8 @@ document.getElementById('A2').addEventListener('click', function () {
     setaname.innerText = 'A2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+
+
 });
 document.getElementById('B1').addEventListener('click', function () {
 
@@ -45,6 +42,8 @@ document.getElementById('B1').addEventListener('click', function () {
     setaname.innerText = 'B1';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    document.getElementById('A2').disabled = true;
+
 });
 document.getElementById('B2').addEventListener('click', function () {
 
@@ -478,6 +477,7 @@ document.getElementById('I4').addEventListener('click', function () {
     setaname.innerText = 'I4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+
 });
 document.getElementById('J3').addEventListener('click', function () {
 
