@@ -5,12 +5,18 @@ function setbgcolor(eventName) {
     btn.setAttribute('disabled', 'true');
 
 }
+let count = 0;
 function removebgcolor(eventName) {
     const bg = document.querySelectorAll(eventName);
 
     for (let i = 0; i < bg.length; i++) {
         bg[i].style.backgroundColor = '';
 
+    }
+    count++;
+    if (count === 4) {
+
+        console.log(alert('tamanna'));
     }
 
 }
