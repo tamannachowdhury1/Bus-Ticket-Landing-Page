@@ -1,30 +1,26 @@
 function setbgcolor(eventName) {
-
     removebgcolor('.kbdbtn');
-
     const btn = document.getElementById(eventName);
+    btn.setAttribute('disabled', 'true');
 
     btn.style.backgroundColor = '#1DD100';
-    //btn.setAttribute('disabled', 'true');
+
 
 }
 let count = 0;
 let limit = 4;
 function removebgcolor(eventName) {
+
+
     const bg = document.querySelectorAll(eventName);
-
     for (let i = 0; i < bg.length; i++) {
-        bg[i].style.backgroundColor = '';
+        bg[i].style.backgroundColor = '#ffffffcc';
 
 
     }
-
     if (count >= limit) {
-        bg.setAttribute('disabled', 'true');
-        // return (alert('You can only four seat select'));
-
+        return (alert('You can only four seat select'));
     }
-    //else if () { }
     count++;
 
 }
