@@ -1,9 +1,13 @@
+
 function gothePoribohon() {
     const getsection = document.getElementById('poribohonSection').scrollIntoView();
     console.log(getsection);
 };
+let count = 0;
 
 document.getElementById('A1').addEventListener('click', function () {
+
+
     setbgcolor('A1');
     getElementBySeatsonkka('seatsonkka');
     seatLeftElementBySeatsonkka('seatLeft')
@@ -11,10 +15,28 @@ document.getElementById('A1').addEventListener('click', function () {
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
     const btnInnerText = document.getElementById('A1');
+
+
     const btnText = btnInnerText.innerText;
     setaname.innerText = btnText;
     newp.prepend(setaname);
+
     setPricecurrentvalue('currentTotal');
+
+    /*  if (count >= 4 && !'A1'.disabled) {
+         'A1'.disabled = true;
+         console.log(alert('you can select tickets only four'));
+ 
+ 
+     } */
+    count++;
+
+    if (count > 4) {
+        btnInnerText.disabled = 'true';
+        console.log(alert('You cannot click more than 4 buttons.'));
+        ;
+    }
+
 
 });
 document.getElementById('A2').addEventListener('click', function () {
@@ -25,10 +47,21 @@ document.getElementById('A2').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'A2';
+    const btnInnerText = document.getElementById('A2');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    /* if (!btnInnerText.disabled) {
+        btnInnerText.disabled = true;
+    } */
+    count++;
 
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
 
 });
 document.getElementById('B1').addEventListener('click', function () {
@@ -39,10 +72,20 @@ document.getElementById('B1').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'B1';
+    const btnInnerText = document.getElementById('B1');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
+
     setPricecurrentvalue('currentTotal');
-    document.getElementById('A2').disabled = true;
+
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
 
 });
 document.getElementById('B2').addEventListener('click', function () {
@@ -56,6 +99,14 @@ document.getElementById('B2').addEventListener('click', function () {
     setaname.innerText = 'B2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('C1').addEventListener('click', function () {
 
@@ -68,6 +119,14 @@ document.getElementById('C1').addEventListener('click', function () {
     setaname.innerText = 'C1';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('C2').addEventListener('click', function () {
 
@@ -80,6 +139,14 @@ document.getElementById('C2').addEventListener('click', function () {
     setaname.innerText = 'C2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('D1').addEventListener('click', function () {
 
@@ -92,6 +159,14 @@ document.getElementById('D1').addEventListener('click', function () {
     setaname.innerText = 'D1';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('D2').addEventListener('click', function () {
 
@@ -104,6 +179,14 @@ document.getElementById('D2').addEventListener('click', function () {
     setaname.innerText = 'D2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('E1').addEventListener('click', function () {
 
@@ -116,6 +199,14 @@ document.getElementById('E1').addEventListener('click', function () {
     setaname.innerText = 'E1';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('E2').addEventListener('click', function () {
 
@@ -128,6 +219,14 @@ document.getElementById('E2').addEventListener('click', function () {
     setaname.innerText = 'E2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('F1').addEventListener('click', function () {
     setbgcolor('F1');
@@ -141,7 +240,13 @@ document.getElementById('F1').addEventListener('click', function () {
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
 
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
 
 });
 document.getElementById('F2').addEventListener('click', function () {
@@ -155,6 +260,15 @@ document.getElementById('F2').addEventListener('click', function () {
     setaname.innerText = 'F2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('G1').addEventListener('click', function () {
 
@@ -167,6 +281,14 @@ document.getElementById('G1').addEventListener('click', function () {
     setaname.innerText = 'G1';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('G2').addEventListener('click', function () {
 
@@ -179,6 +301,14 @@ document.getElementById('G2').addEventListener('click', function () {
     setaname.innerText = 'G2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('H1').addEventListener('click', function () {
 
@@ -191,6 +321,14 @@ document.getElementById('H1').addEventListener('click', function () {
     setaname.innerText = 'H1';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('H2').addEventListener('click', function () {
 
@@ -203,6 +341,15 @@ document.getElementById('H2').addEventListener('click', function () {
     setaname.innerText = 'H2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('I1').addEventListener('click', function () {
 
@@ -215,6 +362,14 @@ document.getElementById('I1').addEventListener('click', function () {
     setaname.innerText = 'I1';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('I2').addEventListener('click', function () {
 
@@ -227,6 +382,14 @@ document.getElementById('I2').addEventListener('click', function () {
     setaname.innerText = 'I2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('J2').addEventListener('click', function () {
 
@@ -239,6 +402,14 @@ document.getElementById('J2').addEventListener('click', function () {
     setaname.innerText = 'J2';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('J1').addEventListener('click', function () {
 
@@ -251,14 +422,17 @@ document.getElementById('J1').addEventListener('click', function () {
     setaname.innerText = 'J1';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('A3').addEventListener('click', function () {
     setbgcolor('A3');
-    /*  const kbds = document.querySelectorAll('#allkbd');
-     const child = kbds.childNodes;
-     for (const kbd of child) {
-         console.log(kbd);
-     } */
+
     getElementBySeatsonkka('seatsonkka');
     seatLeftElementBySeatsonkka('seatLeft')
     setelement('parentId');
@@ -268,7 +442,12 @@ document.getElementById('A3').addEventListener('click', function () {
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    if (count > 4) {
 
+        console.log(alert('you can select tickets only four'));
+
+    }
 
 });
 document.getElementById('A4').addEventListener('click', function () {
@@ -282,6 +461,13 @@ document.getElementById('A4').addEventListener('click', function () {
     setaname.innerText = 'A4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('B3').addEventListener('click', function () {
 
@@ -294,6 +480,13 @@ document.getElementById('B3').addEventListener('click', function () {
     setaname.innerText = 'B3';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('B4').addEventListener('click', function () {
 
@@ -306,6 +499,13 @@ document.getElementById('B4').addEventListener('click', function () {
     setaname.innerText = 'B4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('C3').addEventListener('click', function () {
 
@@ -318,6 +518,13 @@ document.getElementById('C3').addEventListener('click', function () {
     setaname.innerText = 'C3';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('C4').addEventListener('click', function () {
 
@@ -330,6 +537,14 @@ document.getElementById('C4').addEventListener('click', function () {
     setaname.innerText = 'C4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('D3').addEventListener('click', function () {
 
@@ -342,6 +557,13 @@ document.getElementById('D3').addEventListener('click', function () {
     setaname.innerText = 'D3';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('D4').addEventListener('click', function () {
 
@@ -354,6 +576,13 @@ document.getElementById('D4').addEventListener('click', function () {
     setaname.innerText = 'D4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('E3').addEventListener('click', function () {
 
@@ -366,6 +595,13 @@ document.getElementById('E3').addEventListener('click', function () {
     setaname.innerText = 'E3';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('E4').addEventListener('click', function () {
 
@@ -378,6 +614,13 @@ document.getElementById('E4').addEventListener('click', function () {
     setaname.innerText = 'E4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('F3').addEventListener('click', function () {
     setbgcolor('F3');
@@ -392,6 +635,12 @@ document.getElementById('F3').addEventListener('click', function () {
     setPricecurrentvalue('currentTotal');
 
 
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
 
 });
 document.getElementById('F4').addEventListener('click', function () {
@@ -405,6 +654,13 @@ document.getElementById('F4').addEventListener('click', function () {
     setaname.innerText = 'F4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('G3').addEventListener('click', function () {
 
@@ -417,6 +673,14 @@ document.getElementById('G3').addEventListener('click', function () {
     setaname.innerText = 'G3';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('G4').addEventListener('click', function () {
 
@@ -429,6 +693,14 @@ document.getElementById('G4').addEventListener('click', function () {
     setaname.innerText = 'G4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('H3').addEventListener('click', function () {
 
@@ -441,6 +713,13 @@ document.getElementById('H3').addEventListener('click', function () {
     setaname.innerText = 'H3';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('H4').addEventListener('click', function () {
 
@@ -453,6 +732,13 @@ document.getElementById('H4').addEventListener('click', function () {
     setaname.innerText = 'H4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('I3').addEventListener('click', function () {
 
@@ -465,6 +751,13 @@ document.getElementById('I3').addEventListener('click', function () {
     setaname.innerText = 'I3';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    };
+
 });
 document.getElementById('I4').addEventListener('click', function () {
 
@@ -477,6 +770,12 @@ document.getElementById('I4').addEventListener('click', function () {
     setaname.innerText = 'I4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
 
 });
 document.getElementById('J3').addEventListener('click', function () {
@@ -490,6 +789,14 @@ document.getElementById('J3').addEventListener('click', function () {
     setaname.innerText = 'J3';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
 document.getElementById('J4').addEventListener('click', function () {
 
@@ -502,15 +809,25 @@ document.getElementById('J4').addEventListener('click', function () {
     setaname.innerText = 'J4';
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+
+
+    if (count > 4) {
+
+        console.log(alert('you can select tickets only four'));
+
+    }
+
 });
-function btnclick() {
-    setbgcolor('J4');
-    getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
-    setelement('parentId');
-    const newp = getSeatName('setptag');
-    const setaname = document.createElement('p');
-    setaname.innerText = 'J4';
-    newp.prepend(setaname);
-    setPricecurrentvalue('currentTotal');
+
+const inputvalues = inputvalue('number');
+console.log(inputvalues);
+const btn = document.getElementById('nextbutton');
+if (typeof inputvalues === 'number' && count === 1) {
+    btn.disabled = false;
+
+}
+
+else {
+    btn.disabled = true;
 }

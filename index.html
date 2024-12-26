@@ -289,7 +289,7 @@
                                 <div class="grid grid-cols-2 gap-4 lg:gap-12 flex-1 lg:flex-0">
                                     <div class="grid  grid-cols-2 gap-4 font-inter ">
                                         <kbd id="A1"
-                                            class="kbd kbdbtn btn font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A1</kbd>
+                                            class="kbd kbdbtn btn font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px] ">A1</kbd>
                                         <kbd id="A2"
                                             class="kbd  kbdbtn btn font-medium border-none text-lg text-[#03071280] bg-[#F7F8F8] lg:w-[110px] w-[70px] h-[56px]">A2</kbd>
                                         <kbd id="B1"
@@ -429,7 +429,7 @@
                                 <div class="font-inter font-semibold text-base space-y-4   text-[#030712]">
                                     <p>Phone Number*</p>
                                     <div class="font-inter font-normal text-base flex  text-[#03071266]"><input
-                                            type="number"
+                                            id="number" type="number"
                                             class="lg:w-[433px] w-[390px] h-[64px] p-5 border-2 border-[#0307121A] rounded-xl"
                                             name="" id="" placeholder="Enter your phone number"></div>
                                 </div>
@@ -443,7 +443,7 @@
                                 </div>
 
                                 <div>
-                                    <button onclick="nextbtn()" disabled
+                                    <button id="nextbutton" onclick="nextbtn()" disabled
                                         class="btn w-[390px] lg:w-[433px] h-[65px]  font-Raleway  font-semibold text-xl text-white bg-[#1DD100] rounded-2xl text-center">Next</button>
                                 </div>
                             </div>
@@ -511,7 +511,10 @@
             </div>
         </div>
     </footer>
+
     <script src="same.js"></script>
+
+    <!-- <script src="shortcut.js"></script> -->
     <script src="p-tickets.js"></script>
 
 </body>
