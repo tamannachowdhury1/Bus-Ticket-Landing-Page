@@ -3,19 +3,20 @@ function gothePoribohon() {
     const getsection = document.getElementById('poribohonSection').scrollIntoView();
     console.log(getsection);
 };
-
+let count = 0;
 
 document.getElementById('A1').addEventListener('click', function () {
-
+    count++;
 
     setbgcolor('A1');
     getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
+    seatLeftElementBySeatsonkka('seatLeft');
     setelement('parentId');
+
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    const btnInnerText = document.getElementById('A1');
 
+    const btnInnerText = document.getElementById('A1');
 
     const btnText = btnInnerText.innerText;
     setaname.innerText = btnText;
@@ -24,116 +25,338 @@ document.getElementById('A1').addEventListener('click', function () {
     setPricecurrentvalue('currentTotal');
 
 
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('A2').addEventListener('click', function () {
+    count++;
 
     setbgcolor('A2');
     getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
+    seatLeftElementBySeatsonkka('seatLeft');
+
     setelement('parentId');
+
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
+
     const btnInnerText = document.getElementById('A2');
+
     const btnText = btnInnerText.innerText;
     setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('B1').addEventListener('click', function () {
+    count++;
 
     setbgcolor('B1');
     getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
+    seatLeftElementBySeatsonkka('seatLeft');
+
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
+
     const btnInnerText = document.getElementById('B1');
+
     const btnText = btnInnerText.innerText;
     setaname.innerText = btnText;
     newp.prepend(setaname);
 
     setPricecurrentvalue('currentTotal');
 
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('B2').addEventListener('click', function () {
+    count++;
 
     setbgcolor('B2');
     getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
+    seatLeftElementBySeatsonkka('seatLeft');
+
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
+
     const btnInnerText = document.getElementById('B2');
+
     const btnText = btnInnerText.innerText;
     setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
-document.getElementById('C1').addEventListener('click', function () {
+document.getElementById('C1').addEventListener('click', function (event) {
+    count++;
 
     setbgcolor('C1');
     getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
+    seatLeftElementBySeatsonkka('seatLeft');
+
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
+
     const btnInnerText = document.getElementById('C1');
+
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
+    newp.prepend(setaname);
+    setPricecurrentvalue('currentTotal');
+
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
+});
+document.getElementById('C2').addEventListener('click', function () {
+    count++;
+
+    setbgcolor('C2');
+    getElementBySeatsonkka('seatsonkka');
+    seatLeftElementBySeatsonkka('seatLeft');
+
+    setelement('parentId');
+    const newp = getSeatName('setptag');
+    const setaname = document.createElement('p');
+
+    const btnInnerText = document.getElementById('C2');
+
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
+    newp.prepend(setaname);
+    setPricecurrentvalue('currentTotal');
+
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
+});
+document.getElementById('D1').addEventListener('click', function () {
+    count++;
+    setbgcolor('D1');
+    getElementBySeatsonkka('seatsonkka');
+    seatLeftElementBySeatsonkka('seatLeft');
+
+    setelement('parentId');
+    const newp = getSeatName('setptag');
+    const setaname = document.createElement('p');
+
+    const btnInnerText = document.getElementById('D1');
     const btnText = btnInnerText.innerText;
     setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
 
-});
-document.getElementById('C2').addEventListener('click', function () {
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
 
-    setbgcolor('C2');
-    getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
-    setelement('parentId');
-    const newp = getSeatName('setptag');
-    const setaname = document.createElement('p');
-    setaname.innerText = 'C2';
-    newp.prepend(setaname);
-    setPricecurrentvalue('currentTotal');
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
 
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
 
-});
-document.getElementById('D1').addEventListener('click', function () {
+        inputID.removeAttribute('disabled', 'false');
 
-    setbgcolor('D1');
-    getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
-    setelement('parentId');
-    const newp = getSeatName('setptag');
-    const setaname = document.createElement('p');
-    setaname.innerText = 'D1';
-    newp.prepend(setaname);
-    setPricecurrentvalue('currentTotal');
-
-
-
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('D2').addEventListener('click', function () {
 
     setbgcolor('D2');
     getElementBySeatsonkka('seatsonkka');
-    seatLeftElementBySeatsonkka('seatLeft')
+    seatLeftElementBySeatsonkka('seatLeft');
+
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'D2';
+    const btnInnerText = document.getElementById('D2');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
 
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('E1').addEventListener('click', function () {
 
@@ -143,10 +366,38 @@ document.getElementById('E1').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'E1';
+    const btnInnerText = document.getElementById('E1');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+        btnInnerText.setAttribute('disabled', 'true');
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('E2').addEventListener('click', function () {
@@ -157,9 +408,39 @@ document.getElementById('E2').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'E2';
+    const btnInnerText = document.getElementById('E2');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
+
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
+
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 
 });
@@ -171,10 +452,41 @@ document.getElementById('F1').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'F1';
+    const btnInnerText = document.getElementById('F1');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    /* if (count < 1) {
+
+        inputID.setAttribute('disabled', 'true');
+    }
+    else */ if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('F2').addEventListener('click', function () {
@@ -185,10 +497,38 @@ document.getElementById('F2').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'F2';
+    const btnInnerText = document.getElementById('F2');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('G1').addEventListener('click', function () {
@@ -199,11 +539,38 @@ document.getElementById('G1').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'G1';
+    const btnInnerText = document.getElementById('G1');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('G2').addEventListener('click', function () {
 
@@ -213,11 +580,38 @@ document.getElementById('G2').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'G2';
+    const btnInnerText = document.getElementById('G2');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('H1').addEventListener('click', function () {
 
@@ -227,11 +621,39 @@ document.getElementById('H1').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'H1';
+    const btnInnerText = document.getElementById('H1');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('H2').addEventListener('click', function () {
 
@@ -241,11 +663,38 @@ document.getElementById('H2').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'H2';
+    const btnInnerText = document.getElementById('H2');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('I1').addEventListener('click', function () {
@@ -256,11 +705,37 @@ document.getElementById('I1').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'I1';
+    const btnInnerText = document.getElementById('I1');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('I2').addEventListener('click', function () {
 
@@ -270,11 +745,36 @@ document.getElementById('I2').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'I2';
+    const btnInnerText = document.getElementById('I2');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count < 1) {
+
+        inputID.setAttribute('disabled', 'true');
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('J2').addEventListener('click', function () {
 
@@ -284,11 +784,39 @@ document.getElementById('J2').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'J2';
+    const btnInnerText = document.getElementById('J2');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('J1').addEventListener('click', function () {
 
@@ -298,11 +826,37 @@ document.getElementById('J1').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'J1';
+    const btnInnerText = document.getElementById('J1');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('A3').addEventListener('click', function () {
     setbgcolor('A3');
@@ -312,12 +866,38 @@ document.getElementById('A3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'A3';
+    const btnInnerText = document.getElementById('A3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('A4').addEventListener('click', function () {
 
@@ -327,11 +907,38 @@ document.getElementById('A4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'A4';
+    const btnInnerText = document.getElementById('A4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('B3').addEventListener('click', function () {
 
@@ -341,11 +948,38 @@ document.getElementById('B3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'B3';
+    const btnInnerText = document.getElementById('B3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('B4').addEventListener('click', function () {
 
@@ -355,11 +989,37 @@ document.getElementById('B4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'B4';
+    const btnInnerText = document.getElementById('B4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('C3').addEventListener('click', function () {
 
@@ -369,11 +1029,37 @@ document.getElementById('C3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'C3';
+    const btnInnerText = document.getElementById('C3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('C4').addEventListener('click', function () {
 
@@ -383,11 +1069,38 @@ document.getElementById('C4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'C4';
+    const btnInnerText = document.getElementById('C4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('D3').addEventListener('click', function () {
@@ -398,10 +1111,38 @@ document.getElementById('D3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'D3';
+    const btnInnerText = document.getElementById('D3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('D4').addEventListener('click', function () {
 
@@ -411,11 +1152,38 @@ document.getElementById('D4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'D4';
+    const btnInnerText = document.getElementById('D4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('E3').addEventListener('click', function () {
 
@@ -425,10 +1193,37 @@ document.getElementById('E3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'E3';
+    const btnInnerText = document.getElementById('E3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('E4').addEventListener('click', function () {
@@ -439,10 +1234,37 @@ document.getElementById('E4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'E4';
+    const btnInnerText = document.getElementById('E4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('F3').addEventListener('click', function () {
@@ -453,12 +1275,37 @@ document.getElementById('F3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'F3';
+    const btnInnerText = document.getElementById('F3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
 
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('F4').addEventListener('click', function () {
@@ -469,11 +1316,37 @@ document.getElementById('F4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'F4';
+    const btnInnerText = document.getElementById('F4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('G3').addEventListener('click', function () {
 
@@ -483,12 +1356,38 @@ document.getElementById('G3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'G3';
+    const btnInnerText = document.getElementById('G3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('G4').addEventListener('click', function () {
 
@@ -498,13 +1397,38 @@ document.getElementById('G4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'G4';
+    const btnInnerText = document.getElementById('G4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
 
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
 
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('H3').addEventListener('click', function () {
 
@@ -514,16 +1438,37 @@ document.getElementById('H3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'H3';
+    const btnInnerText = document.getElementById('H3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
     count++;
-    if (count > 4) {
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
-        console.log(alert('you can select tickets only four'));
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
 
     }
-
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('H4').addEventListener('click', function () {
 
@@ -533,16 +1478,37 @@ document.getElementById('H4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'H4';
+    const btnInnerText = document.getElementById('H4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
     count++;
-    if (count > 4) {
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
-        console.log(alert('you can select tickets only four'));
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
 
     }
-
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('I3').addEventListener('click', function () {
 
@@ -552,15 +1518,37 @@ document.getElementById('I3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'I3';
+    const btnInnerText = document.getElementById('I3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
     count++;
-    if (count > 4) {
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
-        console.log(alert('you can select tickets only four'));
 
-    };
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('I4').addEventListener('click', function () {
@@ -571,11 +1559,37 @@ document.getElementById('I4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'I4';
+    const btnInnerText = document.getElementById('I4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
 
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 });
 document.getElementById('J3').addEventListener('click', function () {
 
@@ -585,10 +1599,37 @@ document.getElementById('J3').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'J3';
+    const btnInnerText = document.getElementById('J3');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 document.getElementById('J4').addEventListener('click', function () {
@@ -599,21 +1640,56 @@ document.getElementById('J4').addEventListener('click', function () {
     setelement('parentId');
     const newp = getSeatName('setptag');
     const setaname = document.createElement('p');
-    setaname.innerText = 'J4';
+    const btnInnerText = document.getElementById('J4');
+    const btnText = btnInnerText.innerText;
+    setaname.innerText = btnText;
     newp.prepend(setaname);
     setPricecurrentvalue('currentTotal');
+    count++;
+    const apply = document.getElementById('applyBtn');
+    if (count < 4) {
 
+
+        apply.setAttribute('disabled', 'true');
+    }
+    else if (count === 4) {
+        console.log(alert('you can select only four tickets'));
+
+        apply.removeAttribute('disabled', 'false');
+    }
+    else {
+        btnInnerText.setAttribute('disabled', 'true');
+        apply.setAttribute('disabled', 'true');
+    }
+    const input = inputvalue('number');
+    const inputID = document.getElementById('nextbutton');
+
+    if (count === 1 && input !== null && typeof input === 'number') {
+
+        inputID.removeAttribute('disabled', 'false');
+
+    }
+    else if (count < 1) {
+        inputID.setAttribute('disabled', 'true');
+    }
 
 });
 
-const inputvalues = inputvalue('number');
-console.log(inputvalues);
-const btn = document.getElementById('nextbutton');
-if (typeof inputvalues === 'number' && count === 1) {
-    btn.disabled = false;
-
+function nextbtn() {
+    const success = document.getElementById('success');
+    success.classList.remove('hidden');
+    addvisible('ft');
+    addvisible('head');
+    addvisible('heros');
+    addvisible('bonas');
+    addvisible('poribohonSection');
 }
-
-else {
-    btn.disabled = true;
+function continueBtn() {
+    const success = document.getElementById('success');
+    success.classList.add('hidden');
+    removevisible('ft');
+    removevisible('head');
+    removevisible('heros');
+    removevisible('bonas');
+    removevisible('poribohonSection');
 }

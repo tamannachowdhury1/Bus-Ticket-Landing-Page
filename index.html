@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header class="">
+    <header class="visible" id="head">
         <nav class="font-Raleway ">
             <div class="flex flex-row justify-evenly bg-base-100 pt-10 ">
                 <div class="">
@@ -61,7 +61,7 @@
         </nav>
     </header>
     <main class="font-Raleway">
-        <section class="-mt-16">
+        <section class="mt-5 visible ft" id="heros">
             <div class="">
                 <div class="hero lg:bg-auto  min-h-screen bg-[url(images/banner.png)] bg-no-repeat">
                     <div class="hero-content text-neutral-content text-center">
@@ -83,7 +83,7 @@
             </div>
             <div class="font-inter flex justify-center  lg:reative">
                 <div
-                    class="flex lg:flex-row flex-col justify-center lg:space-y-0 space-y-12 lg:mt-0 mt-10  lg:gap-5 lg:absolute lg:inset-y-[82%]">
+                    class="flex lg:flex-row flex-col justify-center lg:space-y-0 space-y-12 lg:mt-0 mt-10  lg:gap-5 lg:absolute lg:inset-y-[107%]">
                     <div class="stats shadow  border-b-4 border-b-[#1DD100] w-[308px]  h-[138px] ">
                         <div class="flex gap-5 justify-center items-center">
                             <div class="stat-figure text-secondary">
@@ -120,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <section class="mt-24 ">
+        <section id="bonas" class="mt-24  visible">
             <h1 class="font-Raleway font-bold text-[40px] text-center">Best offers for you</h1>
             <div class="lg:flex-row flex-col flex place-content-center gap-5 mt-8 mb-12">
                 <div class="stats  ">
@@ -172,7 +172,7 @@
         </section>
 
         <section id="poribohonSection"
-            class="mt-12 p-3 border-t-2 border-b-none   border-t-[#1DD100] rounded-[70px] bg-[#F7F8F8]">
+            class="mt-12 p-3 border-t-2 border-b-none   border-t-[#1DD100] rounded-[70px] bg-[#F7F8F8] ft">
             <div class="">
                 <div class="text-center mt-24">
                     <h1 class="font-Raleway font-bold text-[40px] text-black">P.H Paribahan</h1>
@@ -409,7 +409,7 @@
                                     <input
                                         class="font-normal text-[14px] text-[#03071266] w-[369px] h-[56px] p-5 rounded-xl rounded-r-none"
                                         type="text" placeholder="Have any copupon?">
-                                    <button disabled
+                                    <button disabled id="applyBtn"
                                         class="btn w-[80px] h-[56px] right-[19%]  font-semibold text-base text-white bg-[#1DD100] rounded-lg rounded-l-none ">Apply</button>
                                 </div>
                                 <div class=" font-medium text-base flex justify-between  text-[#030712]">
@@ -459,7 +459,7 @@
         </section>
         <!-- Right Half Cut -->
         <!-- another pages -->
-        <section class="bg-[#1E1E1E1A] py-36 flex flex-col justify-center items-center hidden">
+        <section id="success" class="bg-[#1E1E1E1A] py-36 flex flex-col justify-center items-center hidden">
             <div class="w-[718px] h-[481px] bg-white shadow flex flex-col justify-center items-center">
                 <div class=" flex flex-col justify-center items-center space-y-4">
                     <img src="images/success.png" alt="">
@@ -475,13 +475,13 @@
                             your
                             email.</p>
                     </div>
-                    <button
+                    <button id="conBtn" onclick="continueBtn()"
                         class="btn w-[300px] bg-[#27AE60] text-white rounded-3xl font-semibold text-lg font-inter">Continue</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer class=" bg-[#030712] text-base-content lg:h-[400px]">
+    <footer id="ft" class=" bg-[#030712] text-base-content lg:h-[400px] visible">
         <div class="space-y-4 p-12 lg:p-24">
             <div class="flex  justify-between font-Raleway ">
                 <h1 class=" text-white text-2xl lg:text-[36px] font-extrabold">P-Ticket</h1>

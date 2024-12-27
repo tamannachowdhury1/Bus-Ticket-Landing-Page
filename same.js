@@ -1,29 +1,19 @@
 function setbgcolor(eventName) {
     removebgcolor('.kbdbtn');
     const btn = document.getElementById(eventName);
+    btn.style.backgroundColor = '#1DD100';
     btn.setAttribute('disabled', 'true');
 
-    btn.style.backgroundColor = '#1DD100';
-
-
-}
-let count = 0;
-let limit = 4;
+};
 function removebgcolor(eventName) {
 
 
     const bg = document.querySelectorAll(eventName);
+
     for (let i = 0; i < bg.length; i++) {
-        bg[i].style.backgroundColor = '#ffffffcc';
-
-
+        bg[i].style.backgroundColor = '';
     }
-    if (count >= limit) {
-        return (alert('You can only four seat select'));
-    }
-    count++;
-
-}
+};
 
 
 function getElementBySeatsonkka(eventID) {
@@ -36,7 +26,7 @@ function getElementBySeatsonkka(eventID) {
     }
     seat.innerText = seatEnecreaseNUmber;
 
-}
+};
 function seatLeftElementBySeatsonkka(eventID) {
     const seat = document.getElementById(eventID);
     const seatText = seat.innerText;
@@ -47,7 +37,7 @@ function seatLeftElementBySeatsonkka(eventID) {
     }
     seat.innerText = seatEnecreaseNUmber;
 
-}
+};
 
 
 
@@ -108,3 +98,11 @@ function inputvalue(elementId) {
 }
 
 
+function addvisible(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
+}
+function removevisible(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
+}
